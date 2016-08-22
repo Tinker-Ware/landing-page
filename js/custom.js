@@ -111,7 +111,7 @@ singleItem:true
 // SMOOTH SCROLL________________________//
 
 $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
+  $('a[href*=\\#]:not([href=\\#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -140,6 +140,21 @@ $('#back-to-top').click(function(){
         });
 
 
-$(document).foundation();
+        $(document).foundation();
+
+// ______________ POPUP MODAL
+
+
+var popup = new Foundation.Reveal($('#googleforms-modal'));
+
+
+$('#googleforms-action').click(function(){
+  popup.open();
+});
+
+$('.close-reveal-modal').click(function(){
+  popup.close();
+});
+
 
 })(jQuery);
