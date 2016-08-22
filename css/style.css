@@ -670,6 +670,20 @@ p.copyright {font-size:12px; text-align:center; padding:35px 0 0; margin:0; colo
 #back-to-top i { padding-top:4px; font-size:17px; }
 #back-to-top:hover { background:#B86662; background: rgba(184,102,98,.7); }
 
+/* GoogleForms Modal  ----------------------- */
+#googleforms-modal{
+  margin: 60px auto;
+  outline: 0;
+  position: relative;
+  width: 600px;
+}
+
+.close-reveal-modal{
+  color: #ffffff;
+  position: absolute;
+  margin: 0 20px;
+  right: 0;
+}
 
 /* ==================
   8 = Media Queries
