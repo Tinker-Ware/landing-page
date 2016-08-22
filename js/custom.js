@@ -140,12 +140,13 @@ $('#back-to-top').click(function(){
         });
 
 
-$(document).foundation();
+        $(document).foundation();
 
 // ______________ POPUP MODAL
 
 
 var popup = new Foundation.Reveal($('#googleforms-modal'));
+
 
 $('#googleforms-action').click(function(){
   popup.open();
@@ -154,5 +155,6 @@ $('#googleforms-action').click(function(){
 $('.close-reveal-modal').click(function(){
   popup.close();
 });
+
 
 })(jQuery);
