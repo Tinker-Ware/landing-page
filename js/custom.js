@@ -70,13 +70,14 @@ $('#back-to-top').click(function(){
         });
 
 
-        $(document).foundation();
+var popup = new Foundation.Reveal($('#googleforms-modal'));
 
-// ______________ POPUP MODAL
+$('#googleforms-action').click(function(){
+  popup.open();
+});
 
 $('.close-reveal-modal').click(function(){
   popup.close();
 });
-
 
 })(jQuery);
