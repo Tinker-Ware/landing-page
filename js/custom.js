@@ -70,14 +70,24 @@ $('#back-to-top').click(function(){
         });
 
 
-var popup = new Foundation.Reveal($('#googleforms-modal'));
+var googleforms_popup = new Foundation.Reveal($('#googleforms-modal'));
 
 $('#googleforms-action').click(function(){
-  popup.open();
+  googleforms_popup.open();
 });
 
-$('.close-reveal-modal').click(function(){
-  popup.close();
+$('.close-googleforms-modal').click(function(){
+  googleforms_popup.close();
+});
+
+var video_popup = new Foundation.Reveal($('#video-modal'));
+
+$('#video-action').click(function(){
+  video_popup.open();
+});
+
+$('.close-video-modal').click(function(){
+  video_popup.close();
 });
 
 })(jQuery);
