@@ -162,7 +162,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left: 175px; top:
    ================== */
 
 /* Features */
-.features {padding:75px 0; overflow:hidden;}
+.features {padding: 75px 0; overflow:hidden;}
 .features.servers {padding:40px 0 0; background:#fff;}
 .features.premium-servers {padding:50px 0; background:#535761;}
 .features i {margin-bottom:10px; font-size:55px; color:#e41d35;}
@@ -177,10 +177,28 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left: 175px; top:
 .features ul li h3 {margin-bottom:12px; font-size:21px;}
 
 .how-does-it-work{
-  padding:75px 0;
   overflow:hidden;
+  padding: 0 0 75px;
 }
 .how-does-it-work h2 {font-weight:900;text-align: center; margin-bottom: 12px;}
+
+.request-an-invite{
+  padding: 0 0 75px;
+  text-align: center;
+}
+
+.request-an-invite a{
+  background: #e41d35;
+  border-color: #e41d35;
+  text-decoration: none;
+  color: #f7ebdf;
+  margin-top: 60px;
+  font-weight: 700;
+}
+
+.request-an-invite a:hover, .request-an-invite a:active{
+  background-color: #e41d35;
+}
 
 /* Call to Action */
 .calltoaction {padding:50px 0; background:#222D3A; overflow:hidden;}
