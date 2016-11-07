@@ -72,7 +72,8 @@ $('#back-to-top').click(function(){
 
 var googleforms_popup = new Foundation.Reveal($('#googleforms-modal'));
 
-$('#googleforms-action').click(function(){
+$('.googleforms-action').click(function(){
+  fbq('track', 'lead');
   googleforms_popup.open();
 });
 
@@ -81,6 +82,10 @@ $('.close-googleforms-modal').click(function(){
 });
 
 var video_popup = new Foundation.Reveal($('#video-modal'));
+
+$('#demo').click(function(){
+  fbq('track', 'demo');
+});
 
 $('#video-action').click(function(){
   video_popup.open();
@@ -97,10 +102,8 @@ $('.close-video-modal').click(function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
 ga('create', 'UA-86896105-1', 'auto');
 ga('send', 'pageview');
-
 
 // Facebook Pixel Code
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -118,3 +121,17 @@ a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,
 // Insert Twitter Pixel ID and Standard Event data below
 twq('init','nvotw');
 twq('track','PageView');
+
+// Ptengine heatmap tracking
+window._pt_lt = new Date().getTime();
+window._pt_sp_2 = [];
+_pt_sp_2.push('setAccount,11f0cea0');
+var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+(function() {
+ var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+ atag.src = _protocol + 'cjs.ptengine.com/pta_en.js';
+ var stag = document.createElement('script'); stag.type = 'text/javascript'; stag.async = true;
+ stag.src = _protocol + 'cjs.ptengine.com/pts.js';
+ var s = document.getElementsByTagName('script')[0];
+ s.parentNode.insertBefore(atag, s); s.parentNode.insertBefore(stag, s);
+})();
