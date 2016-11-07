@@ -73,7 +73,7 @@ $('#back-to-top').click(function(){
 var googleforms_popup = new Foundation.Reveal($('#googleforms-modal'));
 
 $('.googleforms-action').click(function(){
-  fbq('track', 'lead');
+  fbq('track', 'Lead');
   googleforms_popup.open();
 });
 
