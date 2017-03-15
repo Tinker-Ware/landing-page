@@ -37,9 +37,35 @@ var wow = new WOW(
 );
 wow.init();
 
+// ______________ LOVED BY DEVELOPERS NUMBER - CALL TO ACTION ON HOME PAGE
+jQuery(document).ready(function() {
+$('.testimonials .circle').waypoint(function() {
+
+$('#lovedby')
+  .prop('number', 0)
+  .animateNumber(
+    {
+      number: 150
+    },
+    3500
+  );
+
+}, { offset: 800, triggerOnce: true });
+});
+
+// TESTIMONIALS CAROUSEL_________________________ //
+
+$(document).ready(function() {
+$("#testimonials-carousel").owlCarousel({
+items : 1,
+autoPlay: 7500,
+transitionStyle : "backSlide",
+itemsDesktop : [1199,1],
+itemsDesktopSmall : [979,1],
+itemsTablet: [768,1]});
+});
 
 // SMOOTH SCROLL________________________//
-
 $(function() {
   $('a[href*=\\#]:not([href=\\#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

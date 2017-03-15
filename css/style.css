@@ -85,7 +85,7 @@ header h2 {padding:45px 0 25px; font-size:42px; color:#fff; text-align: center; 
 
 header.alt-1 {background:url(images/header_alt-1_bg.jpg) bottom center no-repeat; min-height:490px; position: relative;}
 header.alt-2 {background:url(images/header_alt-2_bg.jpg) bottom center no-repeat; min-height:490px; position: relative;}
-header.alt-3 {background:url(images/header_alt-3_bg.jpg) bottom center no-repeat; min-height:490px; position: relative;}
+header.alt-3 {background:url(../images/header_alt-3_bg.jpg) bottom center no-repeat; min-height:450px; position: relative;}
 header.alt-4 {background:url(images/header_alt-4_bg.jpg) bottom center no-repeat; min-height:580px; position: relative;}
 header.alt-5 {background:url(images/header_alt-5_bg.jpg) bottom center no-repeat; min-height:490px; position: relative;}
 header.login {background:transparent; min-height:1px;}
@@ -102,6 +102,9 @@ header.video .message .button:hover {background:#C66C66;}
 video { width: 100%;}
 
 /* Slider Header */
+header.alt-3 .message{
+  top: 30px;
+}
 header.theslider {background:#F5E8DF;  min-height:1px; }
 #slider-container {width: 100%;    display: block;  position: relative; margin:0; padding:0; }
 #home-slider .item {width:100%; max-width:100%; margin:0; padding:0;}
@@ -274,6 +277,8 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left: 175px; top:
 /* Monitoring */
 .newsletter {padding:50px 0 50px; overflow:hidden; background: #fafafa url(../images/monitoring_bg.jpg) repeat-x center bottom;}
 .newsletter h2 {font-weight:900;text-align: center; margin-bottom: 12px;}
+.monitoring {padding:50px 0 0;overflow:hidden;background: #fafafa url(images/monitoring_bg.jpg) repeat-x center bottom;}
+.monitoring h2 {font-weight:900;text-align: center; margin-bottom: 12px;}
 
 /* ==================
    5 = Inner Pages
@@ -416,6 +421,7 @@ ul.domainfeatures li .circle {border-radius: 50%; overflow:hidden; width: 110px;
 .about-us-subheader {padding:50px 0; overflow:hidden;}
 .about-us-subheader h2 {text-align: center; font-weight: 900;}
 .about-us-subheader p {text-align: center;}
+.about-us-subheader p.subheader {font-size: 1.5em;}
 .connect-with-us {margin:40px 0; padding:40px 0; background:#F0F0F0; border-top:1px solid #e8e8e8; border-bottom:1px solid #e8e8e8;}
 .connect-with-us h2 {text-align: center; font-weight: 900;}
 ul.connecticons {display:table; margin:0 auto; text-align: center; margin-top:45px;}
