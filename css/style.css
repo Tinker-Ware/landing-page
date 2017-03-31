@@ -162,14 +162,16 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left: 175px; top:
    ================== */
 
 /* Features */
-.features {padding: 75px 0; overflow:hidden;}
+.features {padding: 75px 0; overflow:hidden}
+.features.dark {padding: 75px 0; overflow:hidden; background:#296c95;}
 .features.servers {padding:40px 0 0; background:#fff;}
 .features.premium-servers {padding:50px 0; background:#535761;}
 .features i {margin-bottom:10px; font-size:55px; color:#e41d35;}
-.features h2 {font-weight:900;text-align: center; margin-bottom: 12px;}
+.features h2 {font-weight:900;text-align: center; margin-bottom: 12px; color:#fff}
 .features.premium-servers h2 {color:#d7d7d7;}
 .features.premium-servers p {color:#ccc;}
 .features p {text-align: center;}
+.features p white {text-align: center; color: #fff; font-size: 29px}
 .features ul {margin-top:60px;}
 .features ul li {text-align: center; padding:50px 20px 20px; border:1px solid #E0E0E0; border-left:0; border-top:0; min-height:230px;}
 .features ul li:nth-child(3n+3) { border-right:0;}
@@ -178,7 +180,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left: 175px; top:
 
 .how-does-it-work{
   overflow:hidden;
-  padding: 0 0 75px;
+  padding: 75px 0 0 75px;
 }
 .how-does-it-work h2 {font-weight:900;text-align: center; margin-bottom: 12px;}
 
